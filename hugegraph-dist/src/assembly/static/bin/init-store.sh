@@ -15,25 +15,25 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 #
-function abs_path() {
+abs_path() {
     SOURCE="${BASH_SOURCE[0]}"
     while [[ -h "$SOURCE" ]]; do
-        DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+        DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
         SOURCE="$(readlink "$SOURCE")"
-        [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+        [[ ${SOURCE} != /* ]] && SOURCE="$DIR/$SOURCE"
     done
-    cd -P "$(dirname "$SOURCE")" && pwd
+    echo "$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 }
 
-BIN=$(abs_path)
-TOP="$(cd "${BIN}"/../ && pwd)"
+BIN=`abs_path`
+TOP="$(cd ${BIN}/../ && pwd)"
 CONF="$TOP/conf"
 LIB="$TOP/lib"
 PLUGINS="$TOP/plugins"
 
-. "${BIN}"/util.sh
+. ${BIN}/util.sh
 
-ensure_path_writable "${PLUGINS}"
+ensure_path_writable ${PLUGINS}
 
 if [[ -n "$JAVA_HOME" ]]; then
     JAVA="$JAVA_HOME"/bin/java
@@ -43,11 +43,11 @@ else
     EXT="$LIB:$PLUGINS"
 fi
 
-cd "${TOP}" || exit
+cd ${TOP}
 
 DEFAULT_JAVA_OPTIONS=""
-JAVA_VERSION=$($JAVA -version 2>&1 | awk 'NR==1{gsub(/"/,""); print $3}' | awk -F'_' '{print $1}')
-# TODO: better not string number compare, use `bc` like github.com/koalaman/shellcheck/wiki/SC2072
+JAVA_VERSION=$($JAVA -version 2>&1 | awk 'NR==1{gsub(/"/,""); print $3}' \
+              | awk -F'_' '{print $1}')
 if [[ $? -eq 0 && $JAVA_VERSION >  "1.9" ]]; then
       DEFAULT_JAVA_OPTIONS="--add-exports=java.base/jdk.internal.reflect=ALL-UNNAMED"
 fi

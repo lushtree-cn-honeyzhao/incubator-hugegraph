@@ -114,7 +114,7 @@
         <hugegraph-commons.version>1.0.0</hugegraph-commons.version>
         <grpc.version>1.47.0</grpc.version>
         <protobuf.version>3.21.7</protobuf.version>
-        <jmh.version>1.36</jmh.version>
+        <dm.version>8.1.1.49</dm.version>
     </properties>
 
     <modules>
@@ -130,6 +130,7 @@
         <module>hugegraph-palo</module>
         <module>hugegraph-hbase</module>
         <module>hugegraph-postgresql</module>
+        <module>hugegraph-dameng</module>
     </modules>
 
     <dependencyManagement>
@@ -323,18 +324,7 @@
                 <artifactId>commons-text</artifactId>
                 <version>1.10.0</version>
             </dependency>
-            <dependency>
-                <groupId>org.openjdk.jmh</groupId>
-                <artifactId>jmh-core</artifactId>
-                <version>${jmh.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.openjdk.jmh</groupId>
-                <artifactId>jmh-generator-annprocess</artifactId>
-                <version>${jmh.version}</version>
-                <scope>test</scope>
-            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -452,32 +442,6 @@
                         </excludes>
                         <consoleOutput>true</consoleOutput>
                     </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-enforcer-plugin</artifactId>
-                    <executions>
-                        <execution>
-                            <id>enforce-version</id>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
-                            <!-- no need to execute in child POMs -->
-                            <inherited>false</inherited>
-                            <configuration>
-                                <rules>
-                                    <!-- TODO: uncomment for checking dependency conflicts -->
-                                    <!-- <DependencyConvergence/> -->
-                                    <requireJavaVersion>
-                                        <version>[1.8,12)</version>
-                                    </requireJavaVersion>
-                                    <requireMavenVersion>
-                                        <version>[3.5.0,)</version>
-                                    </requireMavenVersion>
-                                </rules>
-                            </configuration>
-                        </execution>
-                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -706,4 +670,19 @@
             </build>
         </profile>
     </profiles>
+
+    <repositories>
+        <repository>
+            <id>staged-releases</id>
+            <name>staged-releases</name>
+            <url>https://repository.apache.org/content/groups/staging/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>

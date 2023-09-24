@@ -24,19 +24,19 @@ import java.util.ServiceLoader;
 import org.apache.commons.configuration2.PropertiesConfiguration;
 import org.apache.commons.configuration2.builder.fluent.Configurations;
 import org.apache.commons.configuration2.ex.ConfigurationException;
+import org.slf4j.Logger;
+
 import org.apache.hugegraph.HugeException;
 import org.apache.hugegraph.backend.serializer.SerializerFactory;
 import org.apache.hugegraph.backend.store.BackendProviderFactory;
 import org.apache.hugegraph.config.CoreOptions;
 import org.apache.hugegraph.config.HugeConfig;
 import org.apache.hugegraph.config.OptionSpace;
-import org.apache.hugegraph.masterelection.RoleElectionOptions;
 import org.apache.hugegraph.plugin.HugeGraphPlugin;
 import org.apache.hugegraph.util.E;
 import org.apache.hugegraph.util.Log;
 import org.apache.hugegraph.util.VersionUtil;
 import org.apache.hugegraph.version.CoreVersion;
-import org.slf4j.Logger;
 
 public class RegisterUtil {
 
@@ -45,7 +45,6 @@ public class RegisterUtil {
     static {
         OptionSpace.register("core", CoreOptions.instance());
         OptionSpace.register("dist", DistOptions.instance());
-        OptionSpace.register("masterElection", RoleElectionOptions.instance());
     }
 
     public static void registerBackends() {
@@ -54,7 +53,7 @@ public class RegisterUtil {
         E.checkState(input != null,
                      "Can't read file '%s' as stream", confFile);
 
-        PropertiesConfiguration props;
+        PropertiesConfiguration props = null;
         try {
             props = new Configurations().properties(input);
         } catch (ConfigurationException e) {
@@ -85,6 +84,9 @@ public class RegisterUtil {
             case "mysql":
                 registerMysql();
                 break;
+            case "dameng":
+                registerDameng();
+                break;
             case "palo":
                 registerPalo();
                 break;
@@ -92,14 +94,15 @@ public class RegisterUtil {
                 registerPostgresql();
                 break;
             default:
-                throw new HugeException("Unsupported backend type '%s'", backend);
+                throw new HugeException("Unsupported backend type '%s'",
+                                        backend);
         }
     }
 
     public static void registerCassandra() {
         // Register config
         OptionSpace.register("cassandra",
-                             "org.apache.hugegraph.backend.store.cassandra.CassandraOptions");
+                "org.apache.hugegraph.backend.store.cassandra.CassandraOptions");
         // Register serializer
         SerializerFactory.register("cassandra",
                 "org.apache.hugegraph.backend.store.cassandra.CassandraSerializer");
@@ -111,7 +114,7 @@ public class RegisterUtil {
     public static void registerScyllaDB() {
         // Register config
         OptionSpace.register("scylladb",
-                             "org.apache.hugegraph.backend.store.cassandra.CassandraOptions");
+                "org.apache.hugegraph.backend.store.cassandra.CassandraOptions");
         // Register serializer
         SerializerFactory.register("scylladb",
                 "org.apache.hugegraph.backend.store.cassandra.CassandraSerializer");
@@ -123,10 +126,10 @@ public class RegisterUtil {
     public static void registerHBase() {
         // Register config
         OptionSpace.register("hbase",
-                             "org.apache.hugegraph.backend.store.hbase.HbaseOptions");
+                "org.apache.hugegraph.backend.store.hbase.HbaseOptions");
         // Register serializer
         SerializerFactory.register("hbase",
-                                   "org.apache.hugegraph.backend.store.hbase.HbaseSerializer");
+                "org.apache.hugegraph.backend.store.hbase.HbaseSerializer");
         // Register backend
         BackendProviderFactory.register("hbase",
                 "org.apache.hugegraph.backend.store.hbase.HbaseStoreProvider");
@@ -135,7 +138,7 @@ public class RegisterUtil {
     public static void registerRocksDB() {
         // Register config
         OptionSpace.register("rocksdb",
-                             "org.apache.hugegraph.backend.store.rocksdb.RocksDBOptions");
+                "org.apache.hugegraph.backend.store.rocksdb.RocksDBOptions");
         // Register backend
         BackendProviderFactory.register("rocksdb",
                 "org.apache.hugegraph.backend.store.rocksdb.RocksDBStoreProvider");
@@ -146,19 +149,31 @@ public class RegisterUtil {
     public static void registerMysql() {
         // Register config
         OptionSpace.register("mysql",
-                             "org.apache.hugegraph.backend.store.mysql.MysqlOptions");
+                "org.apache.hugegraph.backend.store.mysql.MysqlOptions");
         // Register serializer
         SerializerFactory.register("mysql",
-                                   "org.apache.hugegraph.backend.store.mysql.MysqlSerializer");
+                "org.apache.hugegraph.backend.store.mysql.MysqlSerializer");
         // Register backend
         BackendProviderFactory.register("mysql",
                 "org.apache.hugegraph.backend.store.mysql.MysqlStoreProvider");
     }
 
+    public static void registerDameng() {
+        // Register config
+        OptionSpace.register("dameng",
+            "org.apache.hugegraph.backend.store.dameng.DamengOptions");
+        // Register serializer
+        SerializerFactory.register("dameng",
+            "org.apache.hugegraph.backend.store.dameng.DamengSerializer");
+        // Register backend
+        BackendProviderFactory.register("dameng",
+            "org.apache.hugegraph.backend.store.dameng.DamengStoreProvider");
+    }
+
     public static void registerPalo() {
         // Register config
         OptionSpace.register("palo",
-                             "org.apache.hugegraph.backend.store.palo.PaloOptions");
+                "org.apache.hugegraph.backend.store.palo.PaloOptions");
         // Register serializer
         SerializerFactory.register("palo",
                 "org.apache.hugegraph.backend.store.palo.PaloSerializer");
@@ -192,7 +207,8 @@ public class RegisterUtil {
      * Scan the jars in plugins directory and load them
      */
     public static void registerPlugins() {
-        ServiceLoader<HugeGraphPlugin> plugins = ServiceLoader.load(HugeGraphPlugin.class);
+        ServiceLoader<HugeGraphPlugin> plugins = ServiceLoader.load(
+                                                 HugeGraphPlugin.class);
         for (HugeGraphPlugin plugin : plugins) {
             LOG.info("Loading plugin {}({})",
                      plugin.name(), plugin.getClass().getCanonicalName());
@@ -211,7 +227,8 @@ public class RegisterUtil {
                 plugin.register();
                 LOG.info("Loaded plugin '{}'", plugin.name());
             } catch (Exception e) {
-                throw new HugeException("Failed to load plugin '%s'", plugin.name(), e);
+                throw new HugeException("Failed to load plugin '%s'",
+                                        plugin.name(), e);
             }
         }
     }
