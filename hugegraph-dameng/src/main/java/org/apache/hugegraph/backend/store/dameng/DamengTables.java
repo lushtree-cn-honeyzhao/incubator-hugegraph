@@ -64,7 +64,7 @@ public class DamengTables {
             SMALL_TEXT, "VARCHAR(255)",
             MID_TEXT, "VARCHAR(1024)",
             LARGE_TEXT, "TEXT",
-            HUGE_TEXT, "MEDIUMTEXT"
+            HUGE_TEXT, "TEXT"
     );
 
     public static class DamengTableTemplate extends DamengTable {
@@ -104,7 +104,7 @@ public class DamengTables {
 
         public void writeVersion(DamengSessions.Session session, String driverVersion) {
             String versionColumn = formatKey(HugeKeys.VERSION);
-            String insert = String.format("INSERT IGNORE INTO %s VALUES " +
+            String insert = String.format("INSERT INTO %s VALUES " +
                                           "('%s', '%s')", this.table(),
                                           versionColumn, driverVersion);
             try {
