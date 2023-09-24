@@ -17,28 +17,22 @@
 
 package org.apache.hugegraph.backend.store.dameng;
 
-import java.net.SocketTimeoutException;
-import java.net.URISyntaxException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.IntStream;
-
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.logging.log4j.util.Strings;
-import org.slf4j.Logger;
-
 import org.apache.hugegraph.backend.BackendException;
 import org.apache.hugegraph.backend.store.BackendSession.AbstractBackendSession;
 import org.apache.hugegraph.backend.store.BackendSessionPool;
 import org.apache.hugegraph.config.HugeConfig;
 import org.apache.hugegraph.util.E;
 import org.apache.hugegraph.util.Log;
+import org.apache.logging.log4j.util.Strings;
+import org.slf4j.Logger;
+
+import java.net.SocketTimeoutException;
+import java.net.URISyntaxException;
+import java.sql.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.IntStream;
 
 public class DamengSessions extends BackendSessionPool {
 
@@ -136,10 +130,13 @@ public class DamengSessions extends BackendSessionPool {
     }
 
     public boolean existsDatabase() {
-        try (Connection conn = this.openWithoutDB(0);
-             ResultSet result = conn.getMetaData().getCatalogs()) {
+        try {
+            Connection conn = this.openWithoutDB(300);
+            ResultSet result = conn.getMetaData().getCatalogs();
             while (result.next()) {
                 String dbName = result.getString(1);
+                LOG.info(String.format("DamengSessions->existsDatabase->dbName::%s",dbName));
+                LOG.info(String.format("DamengSessions->existsDatabase->this.database()::%s",this.database()));
                 if (dbName.equals(this.database())) {
                     return true;
                 }
@@ -152,7 +149,7 @@ public class DamengSessions extends BackendSessionPool {
 
     public boolean existsTable(String table) {
         String sql = this.buildExistsTable(table);
-        try (Connection conn = this.openWithDB(0);
+        try (Connection conn = this.openWithDB(30);
              ResultSet result = conn.createStatement().executeQuery(sql)) {
             return result.next();
         } catch (Exception e) {
@@ -187,11 +184,7 @@ public class DamengSessions extends BackendSessionPool {
      */
     protected Connection openWithoutDB(int timeout) {
         String url = this.buildUri(false, false, false, timeout);
-        try {
-            return this.connect(url);
-        } catch (SQLException e) {
-            throw new BackendException("Failed to access %s", e, url);
-        }
+        return this.connect(url);
     }
 
     /**
@@ -199,11 +192,7 @@ public class DamengSessions extends BackendSessionPool {
      */
     protected Connection openWithDB(int timeout) {
         String url = this.buildUri(false, true, false, timeout);
-        try {
-            return this.connect(url);
-        } catch (SQLException e) {
-            throw new BackendException("Failed to access %s", e, url);
-        }
+        return this.connect(url);
     }
 
     /**
@@ -263,7 +252,7 @@ public class DamengSessions extends BackendSessionPool {
         return new URIBuilder(url);
     }
 
-    private Connection connect(String url) throws SQLException {
+    private Connection connect(String url){
         LOG.info("Connect to the jdbc url: '{}'", url);
         String driverName = this.config.get(DamengOptions.JDBC_DRIVER);
         String username = this.config.get(DamengOptions.JDBC_USERNAME);
@@ -271,11 +260,15 @@ public class DamengSessions extends BackendSessionPool {
         try {
             // Register JDBC driver
             Class.forName(driverName);
+
+            return DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException e) {
-            throw new BackendException("Invalid driver class '%s'",
-                                       driverName);
+            e.printStackTrace();
+        }catch (SQLException e) {
+            e.printStackTrace();
         }
-        return DriverManager.getConnection(url, username, password);
+        LOG.info("===============connect null !!!!");
+        return null;
     }
 
     public class Session extends AbstractBackendSession {

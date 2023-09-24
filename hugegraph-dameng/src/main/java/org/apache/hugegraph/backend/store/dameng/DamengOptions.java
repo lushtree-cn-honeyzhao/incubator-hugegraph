@@ -17,11 +17,11 @@
 
 package org.apache.hugegraph.backend.store.dameng;
 
-import static org.apache.hugegraph.config.OptionChecker.disallowEmpty;
-import static org.apache.hugegraph.config.OptionChecker.rangeInt;
-
 import org.apache.hugegraph.config.ConfigOption;
 import org.apache.hugegraph.config.OptionHolder;
+
+import static org.apache.hugegraph.config.OptionChecker.disallowEmpty;
+import static org.apache.hugegraph.config.OptionChecker.rangeInt;
 
 public class DamengOptions extends OptionHolder {
 

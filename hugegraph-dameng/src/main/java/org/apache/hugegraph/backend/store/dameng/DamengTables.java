@@ -17,6 +17,17 @@
 
 package org.apache.hugegraph.backend.store.dameng;
 
+import com.google.common.collect.ImmutableMap;
+import org.apache.hugegraph.backend.BackendException;
+import org.apache.hugegraph.backend.id.*;
+import org.apache.hugegraph.backend.store.BackendEntry;
+import org.apache.hugegraph.backend.store.BackendEntryIterator;
+import org.apache.hugegraph.backend.store.TableDefine;
+import org.apache.hugegraph.type.HugeType;
+import org.apache.hugegraph.type.define.Directions;
+import org.apache.hugegraph.type.define.HugeKeys;
+import org.apache.hugegraph.util.E;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -25,24 +36,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.hugegraph.backend.BackendException;
-import org.apache.hugegraph.backend.id.EdgeId;
-import org.apache.hugegraph.backend.id.Id;
-import org.apache.hugegraph.backend.id.IdGenerator;
-import org.apache.hugegraph.backend.id.IdUtil;
-import org.apache.hugegraph.backend.id.SplicingIdGenerator;
-import org.apache.hugegraph.backend.store.BackendEntry;
-import org.apache.hugegraph.backend.store.BackendEntryIterator;
-import org.apache.hugegraph.backend.store.TableDefine;
-import org.apache.hugegraph.type.HugeType;
-import org.apache.hugegraph.type.define.Directions;
-import org.apache.hugegraph.type.define.HugeKeys;
-import org.apache.hugegraph.util.E;
-import com.google.common.collect.ImmutableMap;
-
 public class DamengTables {
 
-    public static final String BOOLEAN = "BOOLEAN";
+    public static final String BOOLEAN = "TINYINT"; //0 ,1
     public static final String TINYINT = "TINYINT";
     public static final String INT = "INT";
     public static final String BIGINT = "BIGINT";

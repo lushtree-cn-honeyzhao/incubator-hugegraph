@@ -17,11 +17,11 @@
 
 package org.apache.hugegraph.backend.store.dameng;
 
-import java.util.List;
-
 import org.apache.hugegraph.backend.query.Condition.RelationType;
 import org.apache.hugegraph.exception.NotSupportException;
 import org.apache.hugegraph.util.E;
+
+import java.util.List;
 
 public class WhereBuilder {
 

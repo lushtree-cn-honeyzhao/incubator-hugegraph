@@ -17,20 +17,14 @@
 
 package org.apache.hugegraph.backend.store.dameng;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
-import org.apache.hugegraph.config.HugeConfig;
 import org.apache.commons.lang.NotImplementedException;
-
 import org.apache.hugegraph.backend.BackendException;
 import org.apache.hugegraph.backend.id.Id;
 import org.apache.hugegraph.backend.id.IdGenerator;
 import org.apache.hugegraph.backend.serializer.TableBackendEntry;
 import org.apache.hugegraph.backend.serializer.TableSerializer;
 import org.apache.hugegraph.backend.store.BackendEntry;
+import org.apache.hugegraph.config.HugeConfig;
 import org.apache.hugegraph.schema.SchemaElement;
 import org.apache.hugegraph.structure.HugeElement;
 import org.apache.hugegraph.structure.HugeProperty;
@@ -39,6 +33,11 @@ import org.apache.hugegraph.type.HugeType;
 import org.apache.hugegraph.type.define.HugeKeys;
 import org.apache.hugegraph.util.InsertionOrderUtil;
 import org.apache.hugegraph.util.JsonUtil;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class DamengSerializer extends TableSerializer {
 

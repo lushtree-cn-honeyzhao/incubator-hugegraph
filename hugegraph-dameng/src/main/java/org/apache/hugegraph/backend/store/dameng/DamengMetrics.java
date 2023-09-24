@@ -17,10 +17,10 @@
 
 package org.apache.hugegraph.backend.store.dameng;
 
-import java.util.Map;
-
-import org.apache.hugegraph.backend.store.BackendMetrics;
 import com.google.common.collect.ImmutableMap;
+import org.apache.hugegraph.backend.store.BackendMetrics;
+
+import java.util.Map;
 
 public class DamengMetrics implements BackendMetrics {
 

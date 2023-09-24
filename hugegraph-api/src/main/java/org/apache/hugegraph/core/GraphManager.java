@@ -29,6 +29,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.alipay.sofa.rpc.common.json.JSON;
 import org.apache.commons.configuration2.PropertiesConfiguration;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hugegraph.HugeFactory;
@@ -442,6 +443,7 @@ public final class GraphManager {
                 }
             }
             BackendStoreInfo info = hugegraph.backendStoreInfo();
+            LOG.info(String.format("GraphManager->BackendStoreInfo::%s", JSON.toJSONString(info)));
             if (!info.exists()) {
                 throw new BackendException(
                           "The backend store of '%s' has not been initialized",

@@ -17,13 +17,6 @@
 
 package org.apache.hugegraph.backend.store.dameng;
 
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.BiFunction;
-
 import org.apache.hugegraph.backend.BackendException;
 import org.apache.hugegraph.backend.page.PageState;
 import org.apache.hugegraph.backend.query.Query;
@@ -34,6 +27,13 @@ import org.apache.hugegraph.type.define.HugeKeys;
 import org.apache.hugegraph.util.E;
 import org.apache.hugegraph.util.JsonUtil;
 import org.apache.hugegraph.util.StringEncoding;
+
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.BiFunction;
 
 public class DamengEntryIterator extends BackendEntryIterator {
 
