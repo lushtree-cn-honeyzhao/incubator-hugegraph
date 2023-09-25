@@ -99,11 +99,12 @@ public class DamengSessions extends BackendSessionPool {
 
     public void createDatabase() {
         // Create database with non-database-session
-        LOG.debug("Create database: {}", this.database());
-
+        LOG.info("Create database: {}", this.database());
         String sql = this.buildCreateDatabase(this.database());
-        try (Connection conn = this.openWithoutDB(0)) {
+        try {
+            Connection conn = this.openWithoutDB(DROP_DB_TIMEOUT);
             conn.createStatement().execute(sql);
+            conn.close();
         } catch (SQLException e) {
             if (!e.getMessage().endsWith("already exists")) {
                 throw new BackendException("Failed to create database '%s'", e,
@@ -114,12 +115,15 @@ public class DamengSessions extends BackendSessionPool {
     }
 
     public void dropDatabase() {
-        LOG.debug("Drop database: {}", this.database());
+        LOG.info("Drop database: {}", this.database());
 
         String sql = this.buildDropDatabase(this.database());
-        try (Connection conn = this.openWithoutDB(DROP_DB_TIMEOUT)) {
+        try {
+            Connection conn = this.openWithoutDB(DROP_DB_TIMEOUT);
             conn.createStatement().execute(sql);
+            conn.close();
         } catch (SQLException e) {
+            e.printStackTrace();
             if (e.getCause() instanceof SocketTimeoutException) {
                 LOG.warn("Drop database '{}' timeout", this.database());
             } else {
@@ -141,6 +145,7 @@ public class DamengSessions extends BackendSessionPool {
                     return true;
                 }
             }
+            conn.close();
         } catch (Exception e) {
             throw new BackendException("Failed to obtain database info", e);
         }
@@ -206,8 +211,6 @@ public class DamengSessions extends BackendSessionPool {
     protected String buildUri(boolean withConnParams, boolean withDB,
                               boolean autoReconnect, Integer timeout) {
         String url = this.buildUrlPrefix(withDB);
-
-
 
         E.checkArgument(url.startsWith(JDBC_PREFIX),
                         "The url must start with '%s': '%s'",
