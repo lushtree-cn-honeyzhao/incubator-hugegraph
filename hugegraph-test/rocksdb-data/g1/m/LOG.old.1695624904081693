@@ -1,0 +1,249 @@
+2023/09/25-13:33:43.099375 abc RocksDB version: 7.2.2
+2023/09/25-13:33:43.099425 abc Git sha f2f26b1559b77f56f3074c5cb7d93112b2dd3f9f
+2023/09/25-13:33:43.099444 abc Compile date 2022-05-10 13:50:18
+2023/09/25-13:33:43.099458 abc DB SUMMARY
+2023/09/25-13:33:43.099472 abc DB Session ID:  P9PG39OFGTT4C1UVHGPW
+2023/09/25-13:33:43.100062 abc CURRENT file:  CURRENT
+2023/09/25-13:33:43.100077 abc IDENTITY file:  IDENTITY
+2023/09/25-13:33:43.100118 abc MANIFEST file:  MANIFEST-000008 size: 532 Bytes
+2023/09/25-13:33:43.100158 abc MANIFEST file:  MANIFEST-000016 size: 108 Bytes
+2023/09/25-13:33:43.100198 abc MANIFEST file:  MANIFEST-000017 size: 110 Bytes
+2023/09/25-13:33:43.100211 abc SST files in rocksdb-data\g1\m dir, Total Num: 0, files: 
+2023/09/25-13:33:43.100224 abc Write Ahead Log file in rocksdb-data\g1\m: 000005.log size: 0 ; 000009.log size: 0 ; 000018.log size: 0 ; 
+2023/09/25-13:33:43.104207 abc                         Options.error_if_exists: 0
+2023/09/25-13:33:43.104228 abc                       Options.create_if_missing: 1
+2023/09/25-13:33:43.104237 abc                         Options.paranoid_checks: 1
+2023/09/25-13:33:43.104246 abc             Options.flush_verify_memtable_count: 1
+2023/09/25-13:33:43.104254 abc                               Options.track_and_verify_wals_in_manifest: 0
+2023/09/25-13:33:43.104263 abc                                     Options.env: 000000003BC24AE0
+2023/09/25-13:33:43.104272 abc                                      Options.fs: WinFS
+2023/09/25-13:33:43.104280 abc                                Options.info_log: 000000003E4443F0
+2023/09/25-13:33:43.104289 abc                Options.max_file_opening_threads: 16
+2023/09/25-13:33:43.104298 abc                              Options.statistics: 0000000000000000
+2023/09/25-13:33:43.104306 abc                               Options.use_fsync: 0
+2023/09/25-13:33:43.104315 abc                       Options.max_log_file_size: 0
+2023/09/25-13:33:43.104324 abc                  Options.max_manifest_file_size: 104857600
+2023/09/25-13:33:43.104333 abc                   Options.log_file_time_to_roll: 0
+2023/09/25-13:33:43.104341 abc                       Options.keep_log_file_num: 1000
+2023/09/25-13:33:43.104350 abc                    Options.recycle_log_file_num: 0
+2023/09/25-13:33:43.104358 abc                         Options.allow_fallocate: 1
+2023/09/25-13:33:43.104367 abc                        Options.allow_mmap_reads: 0
+2023/09/25-13:33:43.104375 abc                       Options.allow_mmap_writes: 0
+2023/09/25-13:33:43.104384 abc                        Options.use_direct_reads: 0
+2023/09/25-13:33:43.104392 abc                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/09/25-13:33:43.104400 abc          Options.create_missing_column_families: 0
+2023/09/25-13:33:43.104409 abc                              Options.db_log_dir: 
+2023/09/25-13:33:43.104417 abc                                 Options.wal_dir: 
+2023/09/25-13:33:43.104426 abc                Options.table_cache_numshardbits: 6
+2023/09/25-13:33:43.104437 abc                         Options.WAL_ttl_seconds: 0
+2023/09/25-13:33:43.104446 abc                       Options.WAL_size_limit_MB: 0
+2023/09/25-13:33:43.104454 abc                        Options.max_write_batch_group_size_bytes: 1048576
+2023/09/25-13:33:43.104463 abc             Options.manifest_preallocation_size: 4194304
+2023/09/25-13:33:43.104471 abc                     Options.is_fd_close_on_exec: 1
+2023/09/25-13:33:43.104480 abc                   Options.advise_random_on_open: 1
+2023/09/25-13:33:43.104488 abc                   Options.experimental_mempurge_threshold: 0.000000
+2023/09/25-13:33:43.104499 abc                    Options.db_write_buffer_size: 0
+2023/09/25-13:33:43.104508 abc                    Options.write_buffer_manager: 000000003BC24270
+2023/09/25-13:33:43.104516 abc         Options.access_hint_on_compaction_start: 1
+2023/09/25-13:33:43.104525 abc           Options.random_access_max_buffer_size: 1048576
+2023/09/25-13:33:43.104535 abc                      Options.use_adaptive_mutex: 0
+2023/09/25-13:33:43.104544 abc                            Options.rate_limiter: 0000000000000000
+2023/09/25-13:33:43.104588 abc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/09/25-13:33:43.104599 abc                       Options.wal_recovery_mode: 2
+2023/09/25-13:33:43.104608 abc                  Options.enable_thread_tracking: 0
+2023/09/25-13:33:43.104616 abc                  Options.enable_pipelined_write: 0
+2023/09/25-13:33:43.104625 abc                  Options.unordered_write: 0
+2023/09/25-13:33:43.104634 abc         Options.allow_concurrent_memtable_write: 1
+2023/09/25-13:33:43.104642 abc      Options.enable_write_thread_adaptive_yield: 1
+2023/09/25-13:33:43.104651 abc             Options.write_thread_max_yield_usec: 100
+2023/09/25-13:33:43.104659 abc            Options.write_thread_slow_yield_usec: 3
+2023/09/25-13:33:43.104668 abc                               Options.row_cache: None
+2023/09/25-13:33:43.104677 abc                              Options.wal_filter: None
+2023/09/25-13:33:43.104688 abc             Options.avoid_flush_during_recovery: 0
+2023/09/25-13:33:43.104697 abc             Options.allow_ingest_behind: 0
+2023/09/25-13:33:43.104705 abc             Options.two_write_queues: 0
+2023/09/25-13:33:43.104714 abc             Options.manual_wal_flush: 0
+2023/09/25-13:33:43.104722 abc             Options.wal_compression: 0
+2023/09/25-13:33:43.104731 abc             Options.atomic_flush: 0
+2023/09/25-13:33:43.104739 abc             Options.avoid_unnecessary_blocking_io: 1
+2023/09/25-13:33:43.104748 abc                 Options.persist_stats_to_disk: 0
+2023/09/25-13:33:43.104757 abc                 Options.write_dbid_to_manifest: 1
+2023/09/25-13:33:43.104765 abc                 Options.log_readahead_size: 0
+2023/09/25-13:33:43.104774 abc                 Options.file_checksum_gen_factory: Unknown
+2023/09/25-13:33:43.104782 abc                 Options.best_efforts_recovery: 0
+2023/09/25-13:33:43.104791 abc                Options.max_bgerror_resume_count: 2147483647
+2023/09/25-13:33:43.104799 abc            Options.bgerror_resume_retry_interval: 1000000
+2023/09/25-13:33:43.104807 abc             Options.allow_data_in_errors: 0
+2023/09/25-13:33:43.104815 abc             Options.db_host_id: __hostname__
+2023/09/25-13:33:43.104824 abc             Options.max_background_jobs: 8
+2023/09/25-13:33:43.104832 abc             Options.max_background_compactions: -1
+2023/09/25-13:33:43.104841 abc             Options.max_subcompactions: 4
+2023/09/25-13:33:43.104849 abc             Options.avoid_flush_during_shutdown: 0
+2023/09/25-13:33:43.104858 abc           Options.writable_file_max_buffer_size: 1048576
+2023/09/25-13:33:43.104866 abc             Options.delayed_write_rate : 16777216
+2023/09/25-13:33:43.104874 abc             Options.max_total_wal_size: 0
+2023/09/25-13:33:43.104883 abc             Options.delete_obsolete_files_period_micros: 21600000000
+2023/09/25-13:33:43.104891 abc                   Options.stats_dump_period_sec: 600
+2023/09/25-13:33:43.104900 abc                 Options.stats_persist_period_sec: 600
+2023/09/25-13:33:43.104909 abc                 Options.stats_history_buffer_size: 1048576
+2023/09/25-13:33:43.104917 abc                          Options.max_open_files: -1
+2023/09/25-13:33:43.104926 abc                          Options.bytes_per_sync: 0
+2023/09/25-13:33:43.104935 abc                      Options.wal_bytes_per_sync: 0
+2023/09/25-13:33:43.104944 abc                   Options.strict_bytes_per_sync: 0
+2023/09/25-13:33:43.104952 abc       Options.compaction_readahead_size: 0
+2023/09/25-13:33:43.104960 abc                  Options.max_background_flushes: -1
+2023/09/25-13:33:43.104969 abc Compression algorithms supported:
+2023/09/25-13:33:43.104977 abc 	kZSTD supported: 1
+2023/09/25-13:33:43.104985 abc 	kSnappyCompression supported: 1
+2023/09/25-13:33:43.104994 abc 	kBZip2Compression supported: 0
+2023/09/25-13:33:43.105004 abc 	kZlibCompression supported: 1
+2023/09/25-13:33:43.105013 abc 	kLZ4Compression supported: 1
+2023/09/25-13:33:43.105021 abc 	kXpressCompression supported: 0
+2023/09/25-13:33:43.105029 abc 	kLZ4HCCompression supported: 1
+2023/09/25-13:33:43.105064 abc 	kZSTDNotFinalCompression supported: 1
+2023/09/25-13:33:43.105074 abc Fast CRC32 supported: Not supported on x86
+2023/09/25-13:33:43.106224 abc [db\version_set.cc:4926] Recovering from manifest file: rocksdb-data\g1\m/MANIFEST-000017
+2023/09/25-13:33:43.106351 abc [db\column_family.cc:607] --------------- Options for column family [default]:
+2023/09/25-13:33:43.106358 abc               Options.comparator: leveldb.BytewiseComparator
+2023/09/25-13:33:43.106362 abc           Options.merge_operator: UInt64AddOperator
+2023/09/25-13:33:43.106367 abc        Options.compaction_filter: None
+2023/09/25-13:33:43.106371 abc        Options.compaction_filter_factory: None
+2023/09/25-13:33:43.106376 abc  Options.sst_partitioner_factory: None
+2023/09/25-13:33:43.106380 abc         Options.memtable_factory: SkipListFactory
+2023/09/25-13:33:43.106384 abc            Options.table_factory: BlockBasedTable
+2023/09/25-13:33:43.106401 abc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000000003E49F5E0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000000003E4E4B30
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+2023/09/25-13:33:43.106406 abc        Options.write_buffer_size: 134217728
+2023/09/25-13:33:43.106410 abc  Options.max_write_buffer_number: 6
+2023/09/25-13:33:43.106415 abc        Options.compression[0]: NoCompression
+2023/09/25-13:33:43.106419 abc        Options.compression[1]: NoCompression
+2023/09/25-13:33:43.106423 abc        Options.compression[2]: Snappy
+2023/09/25-13:33:43.106428 abc        Options.compression[3]: Snappy
+2023/09/25-13:33:43.106432 abc        Options.compression[4]: Snappy
+2023/09/25-13:33:43.106436 abc        Options.compression[5]: Snappy
+2023/09/25-13:33:43.106440 abc        Options.compression[6]: Snappy
+2023/09/25-13:33:43.106444 abc                  Options.bottommost_compression: NoCompression
+2023/09/25-13:33:43.106449 abc       Options.prefix_extractor: nullptr
+2023/09/25-13:33:43.106453 abc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2023/09/25-13:33:43.106458 abc             Options.num_levels: 7
+2023/09/25-13:33:43.106462 abc        Options.min_write_buffer_number_to_merge: 2
+2023/09/25-13:33:43.106467 abc     Options.max_write_buffer_number_to_maintain: 0
+2023/09/25-13:33:43.106471 abc     Options.max_write_buffer_size_to_maintain: 0
+2023/09/25-13:33:43.106476 abc            Options.bottommost_compression_opts.window_bits: -14
+2023/09/25-13:33:43.106481 abc                  Options.bottommost_compression_opts.level: 32767
+2023/09/25-13:33:43.106485 abc               Options.bottommost_compression_opts.strategy: 0
+2023/09/25-13:33:43.106490 abc         Options.bottommost_compression_opts.max_dict_bytes: 0
+2023/09/25-13:33:43.106494 abc         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2023/09/25-13:33:43.106499 abc         Options.bottommost_compression_opts.parallel_threads: 1
+2023/09/25-13:33:43.106503 abc                  Options.bottommost_compression_opts.enabled: false
+2023/09/25-13:33:43.106508 abc         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2023/09/25-13:33:43.106514 abc            Options.compression_opts.window_bits: -14
+2023/09/25-13:33:43.106570 abc                  Options.compression_opts.level: 32767
+2023/09/25-13:33:43.106586 abc               Options.compression_opts.strategy: 0
+2023/09/25-13:33:43.106596 abc         Options.compression_opts.max_dict_bytes: 0
+2023/09/25-13:33:43.106602 abc         Options.compression_opts.zstd_max_train_bytes: 0
+2023/09/25-13:33:43.106606 abc         Options.compression_opts.parallel_threads: 1
+2023/09/25-13:33:43.106611 abc                  Options.compression_opts.enabled: false
+2023/09/25-13:33:43.106615 abc         Options.compression_opts.max_dict_buffer_bytes: 0
+2023/09/25-13:33:43.106620 abc      Options.level0_file_num_compaction_trigger: 2
+2023/09/25-13:33:43.106624 abc          Options.level0_slowdown_writes_trigger: 20
+2023/09/25-13:33:43.106628 abc              Options.level0_stop_writes_trigger: 36
+2023/09/25-13:33:43.106633 abc                   Options.target_file_size_base: 67108864
+2023/09/25-13:33:43.106637 abc             Options.target_file_size_multiplier: 1
+2023/09/25-13:33:43.106679 abc                Options.max_bytes_for_level_base: 536870912
+2023/09/25-13:33:43.106685 abc Options.level_compaction_dynamic_level_bytes: 0
+2023/09/25-13:33:43.106691 abc          Options.max_bytes_for_level_multiplier: 10.000000
+2023/09/25-13:33:43.106703 abc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2023/09/25-13:33:43.106714 abc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2023/09/25-13:33:43.106719 abc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2023/09/25-13:33:43.106725 abc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2023/09/25-13:33:43.106734 abc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2023/09/25-13:33:43.106740 abc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2023/09/25-13:33:43.106745 abc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2023/09/25-13:33:43.106750 abc       Options.max_sequential_skip_in_iterations: 8
+2023/09/25-13:33:43.106755 abc                    Options.max_compaction_bytes: 1677721600
+2023/09/25-13:33:43.106760 abc                        Options.arena_block_size: 1048576
+2023/09/25-13:33:43.106765 abc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2023/09/25-13:33:43.106770 abc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2023/09/25-13:33:43.106775 abc                Options.disable_auto_compactions: 0
+2023/09/25-13:33:43.106781 abc                        Options.compaction_style: kCompactionStyleLevel
+2023/09/25-13:33:43.106788 abc                          Options.compaction_pri: kMinOverlappingRatio
+2023/09/25-13:33:43.106793 abc Options.compaction_options_universal.size_ratio: 1
+2023/09/25-13:33:43.106798 abc Options.compaction_options_universal.min_merge_width: 2
+2023/09/25-13:33:43.106803 abc Options.compaction_options_universal.max_merge_width: 4294967295
+2023/09/25-13:33:43.106808 abc Options.compaction_options_universal.max_size_amplification_percent: 200
+2023/09/25-13:33:43.106813 abc Options.compaction_options_universal.compression_size_percent: 80
+2023/09/25-13:33:43.106818 abc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2023/09/25-13:33:43.106823 abc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2023/09/25-13:33:43.106828 abc Options.compaction_options_fifo.allow_compaction: 0
+2023/09/25-13:33:43.106835 abc                   Options.table_properties_collectors: 
+2023/09/25-13:33:43.106840 abc                   Options.inplace_update_support: 0
+2023/09/25-13:33:43.106845 abc                 Options.inplace_update_num_locks: 10000
+2023/09/25-13:33:43.106850 abc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2023/09/25-13:33:43.106855 abc               Options.memtable_whole_key_filtering: 0
+2023/09/25-13:33:43.106861 abc   Options.memtable_huge_page_size: 0
+2023/09/25-13:33:43.106865 abc                           Options.bloom_locality: 0
+2023/09/25-13:33:43.106870 abc                    Options.max_successive_merges: 0
+2023/09/25-13:33:43.106905 abc                Options.optimize_filters_for_hits: 1
+2023/09/25-13:33:43.106911 abc                Options.paranoid_file_checks: 0
+2023/09/25-13:33:43.106916 abc                Options.force_consistency_checks: 1
+2023/09/25-13:33:43.106921 abc                Options.report_bg_io_stats: 0
+2023/09/25-13:33:43.106926 abc                               Options.ttl: 2592000
+2023/09/25-13:33:43.106931 abc          Options.periodic_compaction_seconds: 0
+2023/09/25-13:33:43.106936 abc                       Options.enable_blob_files: false
+2023/09/25-13:33:43.106942 abc                           Options.min_blob_size: 0
+2023/09/25-13:33:43.106947 abc                          Options.blob_file_size: 268435456
+2023/09/25-13:33:43.106952 abc                   Options.blob_compression_type: NoCompression
+2023/09/25-13:33:43.106957 abc          Options.enable_blob_garbage_collection: false
+2023/09/25-13:33:43.106962 abc      Options.blob_garbage_collection_age_cutoff: 0.250000
+2023/09/25-13:33:43.106968 abc Options.blob_garbage_collection_force_threshold: 1.000000
+2023/09/25-13:33:43.106973 abc          Options.blob_compaction_readahead_size: 0
+2023/09/25-13:33:43.108978 abc [db\version_set.cc:4974] Recovered from manifest file:rocksdb-data\g1\m/MANIFEST-000017 succeeded,manifest_file_number is 17, next_file_number is 19, last_sequence is 0, log_number is 10,prev_log_number is 0,max_column_family is 6,min_log_number_to_keep is 0
+2023/09/25-13:33:43.108990 abc [db\version_set.cc:4983] Column family [default] (ID 0), log number is 10
+2023/09/25-13:33:43.122669 abc [db\version_set.cc:4445] Creating manifest 20
+2023/09/25-13:33:43.152499 abc EVENT_LOG_v1 {"time_micros": 1695620023152483, "job": 1, "event": "recovery_started", "wal_files": [5, 9, 18]}
+2023/09/25-13:33:43.152527 abc [db\db_impl\db_impl_open.cc:879] Skipping log #5 since it is older than min log to keep #10
+2023/09/25-13:33:43.152539 abc [db\db_impl\db_impl_open.cc:879] Skipping log #9 since it is older than min log to keep #10
+2023/09/25-13:33:43.152552 abc [db\db_impl\db_impl_open.cc:892] Recovering log #18 mode 2
+2023/09/25-13:33:43.152895 abc [db\version_set.cc:4445] Creating manifest 21
+2023/09/25-13:33:43.186931 abc EVENT_LOG_v1 {"time_micros": 1695620023186925, "job": 1, "event": "recovery_finished"}
+2023/09/25-13:33:43.202800 abc [db\db_impl\db_impl_open.cc:1891] SstFileManager instance 000000003E96C0A0
+2023/09/25-13:33:43.203534 abc DB pointer 000000003E500080
+2023/09/25-13:33:43.877562 186c [db\db_impl\db_impl.cc:475] Shutdown: canceling all background work
+2023/09/25-13:33:43.886511 186c [db\db_impl\db_impl.cc:692] Shutdown complete

@@ -1,0 +1,105 @@
+2023/09/25-15:21:22.222991 5cb4 RocksDB version: 7.2.2
+2023/09/25-15:21:22.223040 5cb4 Git sha f2f26b1559b77f56f3074c5cb7d93112b2dd3f9f
+2023/09/25-15:21:22.223056 5cb4 Compile date 2022-05-10 13:50:18
+2023/09/25-15:21:22.223068 5cb4 DB SUMMARY
+2023/09/25-15:21:22.223079 5cb4 DB Session ID:  XE1X837ARDAI0UV0JE21
+2023/09/25-15:21:22.225083 5cb4 CURRENT file:  CURRENT
+2023/09/25-15:21:22.225105 5cb4 IDENTITY file:  IDENTITY
+2023/09/25-15:21:22.225162 5cb4 MANIFEST file:  MANIFEST-000060 size: 252 Bytes
+2023/09/25-15:21:22.225175 5cb4 SST files in rocksdb-index1\g dir, Total Num: 0, files: 
+2023/09/25-15:21:22.225188 5cb4 Write Ahead Log file in rocksdb-index1\g: 000005.log size: 0 ; 000009.log size: 0 ; 000022.log size: 0 ; 000026.log size: 0 ; 000031.log size: 0 ; 000035.log size: 0 ; 000048.log size: 0 ; 000052.log size: 0 ; 000057.log size: 0 ; 000061.log size: 0 ; 
+2023/09/25-15:21:22.229032 5cb4                         Options.error_if_exists: 0
+2023/09/25-15:21:22.229041 5cb4                       Options.create_if_missing: 1
+2023/09/25-15:21:22.229046 5cb4                         Options.paranoid_checks: 1
+2023/09/25-15:21:22.229051 5cb4             Options.flush_verify_memtable_count: 1
+2023/09/25-15:21:22.229056 5cb4                               Options.track_and_verify_wals_in_manifest: 0
+2023/09/25-15:21:22.229061 5cb4                                     Options.env: 000000003A41A360
+2023/09/25-15:21:22.229066 5cb4                                      Options.fs: WinFS
+2023/09/25-15:21:22.229072 5cb4                                Options.info_log: 000000003DA1B780
+2023/09/25-15:21:22.229077 5cb4                Options.max_file_opening_threads: 16
+2023/09/25-15:21:22.229082 5cb4                              Options.statistics: 0000000000000000
+2023/09/25-15:21:22.229087 5cb4                               Options.use_fsync: 0
+2023/09/25-15:21:22.229092 5cb4                       Options.max_log_file_size: 0
+2023/09/25-15:21:22.229097 5cb4                  Options.max_manifest_file_size: 104857600
+2023/09/25-15:21:22.229102 5cb4                   Options.log_file_time_to_roll: 0
+2023/09/25-15:21:22.229108 5cb4                       Options.keep_log_file_num: 1000
+2023/09/25-15:21:22.229113 5cb4                    Options.recycle_log_file_num: 0
+2023/09/25-15:21:22.229118 5cb4                         Options.allow_fallocate: 1
+2023/09/25-15:21:22.229123 5cb4                        Options.allow_mmap_reads: 0
+2023/09/25-15:21:22.229128 5cb4                       Options.allow_mmap_writes: 0
+2023/09/25-15:21:22.229133 5cb4                        Options.use_direct_reads: 0
+2023/09/25-15:21:22.229139 5cb4                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/09/25-15:21:22.229144 5cb4          Options.create_missing_column_families: 0
+2023/09/25-15:21:22.229148 5cb4                              Options.db_log_dir: 
+2023/09/25-15:21:22.229153 5cb4                                 Options.wal_dir: 
+2023/09/25-15:21:22.229158 5cb4                Options.table_cache_numshardbits: 6
+2023/09/25-15:21:22.229163 5cb4                         Options.WAL_ttl_seconds: 0
+2023/09/25-15:21:22.229168 5cb4                       Options.WAL_size_limit_MB: 0
+2023/09/25-15:21:22.229173 5cb4                        Options.max_write_batch_group_size_bytes: 1048576
+2023/09/25-15:21:22.229179 5cb4             Options.manifest_preallocation_size: 4194304
+2023/09/25-15:21:22.229184 5cb4                     Options.is_fd_close_on_exec: 1
+2023/09/25-15:21:22.229189 5cb4                   Options.advise_random_on_open: 1
+2023/09/25-15:21:22.229194 5cb4                   Options.experimental_mempurge_threshold: 0.000000
+2023/09/25-15:21:22.229201 5cb4                    Options.db_write_buffer_size: 0
+2023/09/25-15:21:22.229206 5cb4                    Options.write_buffer_manager: 000000003A419DC0
+2023/09/25-15:21:22.229213 5cb4         Options.access_hint_on_compaction_start: 1
+2023/09/25-15:21:22.229220 5cb4           Options.random_access_max_buffer_size: 1048576
+2023/09/25-15:21:22.229225 5cb4                      Options.use_adaptive_mutex: 0
+2023/09/25-15:21:22.229263 5cb4                            Options.rate_limiter: 0000000000000000
+2023/09/25-15:21:22.229270 5cb4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/09/25-15:21:22.229275 5cb4                       Options.wal_recovery_mode: 2
+2023/09/25-15:21:22.229280 5cb4                  Options.enable_thread_tracking: 0
+2023/09/25-15:21:22.229285 5cb4                  Options.enable_pipelined_write: 0
+2023/09/25-15:21:22.229290 5cb4                  Options.unordered_write: 0
+2023/09/25-15:21:22.229295 5cb4         Options.allow_concurrent_memtable_write: 1
+2023/09/25-15:21:22.229300 5cb4      Options.enable_write_thread_adaptive_yield: 1
+2023/09/25-15:21:22.229306 5cb4             Options.write_thread_max_yield_usec: 100
+2023/09/25-15:21:22.229311 5cb4            Options.write_thread_slow_yield_usec: 3
+2023/09/25-15:21:22.229316 5cb4                               Options.row_cache: None
+2023/09/25-15:21:22.229321 5cb4                              Options.wal_filter: None
+2023/09/25-15:21:22.229326 5cb4             Options.avoid_flush_during_recovery: 0
+2023/09/25-15:21:22.229331 5cb4             Options.allow_ingest_behind: 0
+2023/09/25-15:21:22.229336 5cb4             Options.two_write_queues: 0
+2023/09/25-15:21:22.229341 5cb4             Options.manual_wal_flush: 0
+2023/09/25-15:21:22.229346 5cb4             Options.wal_compression: 0
+2023/09/25-15:21:22.229351 5cb4             Options.atomic_flush: 0
+2023/09/25-15:21:22.229356 5cb4             Options.avoid_unnecessary_blocking_io: 1
+2023/09/25-15:21:22.229361 5cb4                 Options.persist_stats_to_disk: 0
+2023/09/25-15:21:22.229366 5cb4                 Options.write_dbid_to_manifest: 1
+2023/09/25-15:21:22.229371 5cb4                 Options.log_readahead_size: 0
+2023/09/25-15:21:22.229377 5cb4                 Options.file_checksum_gen_factory: Unknown
+2023/09/25-15:21:22.229382 5cb4                 Options.best_efforts_recovery: 0
+2023/09/25-15:21:22.229387 5cb4                Options.max_bgerror_resume_count: 2147483647
+2023/09/25-15:21:22.229392 5cb4            Options.bgerror_resume_retry_interval: 1000000
+2023/09/25-15:21:22.229397 5cb4             Options.allow_data_in_errors: 0
+2023/09/25-15:21:22.229403 5cb4             Options.db_host_id: __hostname__
+2023/09/25-15:21:22.229409 5cb4             Options.max_background_jobs: 8
+2023/09/25-15:21:22.229414 5cb4             Options.max_background_compactions: -1
+2023/09/25-15:21:22.229420 5cb4             Options.max_subcompactions: 4
+2023/09/25-15:21:22.229425 5cb4             Options.avoid_flush_during_shutdown: 0
+2023/09/25-15:21:22.229431 5cb4           Options.writable_file_max_buffer_size: 1048576
+2023/09/25-15:21:22.229436 5cb4             Options.delayed_write_rate : 16777216
+2023/09/25-15:21:22.229441 5cb4             Options.max_total_wal_size: 0
+2023/09/25-15:21:22.229457 5cb4             Options.delete_obsolete_files_period_micros: 21600000000
+2023/09/25-15:21:22.229465 5cb4                   Options.stats_dump_period_sec: 600
+2023/09/25-15:21:22.229471 5cb4                 Options.stats_persist_period_sec: 600
+2023/09/25-15:21:22.229476 5cb4                 Options.stats_history_buffer_size: 1048576
+2023/09/25-15:21:22.229481 5cb4                          Options.max_open_files: -1
+2023/09/25-15:21:22.229486 5cb4                          Options.bytes_per_sync: 0
+2023/09/25-15:21:22.229491 5cb4                      Options.wal_bytes_per_sync: 0
+2023/09/25-15:21:22.229496 5cb4                   Options.strict_bytes_per_sync: 0
+2023/09/25-15:21:22.229501 5cb4       Options.compaction_readahead_size: 0
+2023/09/25-15:21:22.229506 5cb4                  Options.max_background_flushes: -1
+2023/09/25-15:21:22.229511 5cb4 Compression algorithms supported:
+2023/09/25-15:21:22.229517 5cb4 	kZSTD supported: 1
+2023/09/25-15:21:22.229523 5cb4 	kSnappyCompression supported: 1
+2023/09/25-15:21:22.229528 5cb4 	kBZip2Compression supported: 0
+2023/09/25-15:21:22.229533 5cb4 	kZlibCompression supported: 1
+2023/09/25-15:21:22.229539 5cb4 	kLZ4Compression supported: 1
+2023/09/25-15:21:22.229570 5cb4 	kXpressCompression supported: 0
+2023/09/25-15:21:22.229577 5cb4 	kLZ4HCCompression supported: 1
+2023/09/25-15:21:22.229582 5cb4 	kZSTDNotFinalCompression supported: 1
+2023/09/25-15:21:22.229588 5cb4 Fast CRC32 supported: Not supported on x86
+2023/09/25-15:21:22.230062 5cb4 [WARN] [db\db_impl\db_impl_open.cc:1977] DB::Open() failed: IO error: Failed to create lock file: rocksdb-index1\g/LOCK: 另一个程序正在使用此文件，进程无法访问。
+2023/09/25-15:21:22.230076 5cb4 [db\db_impl\db_impl.cc:475] Shutdown: canceling all background work
+2023/09/25-15:21:22.230097 5cb4 [db\db_impl\db_impl.cc:692] Shutdown complete

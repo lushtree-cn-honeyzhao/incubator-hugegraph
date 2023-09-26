@@ -1,0 +1,105 @@
+2023/09/25-13:33:41.996632 557c RocksDB version: 7.2.2
+2023/09/25-13:33:41.996678 557c Git sha f2f26b1559b77f56f3074c5cb7d93112b2dd3f9f
+2023/09/25-13:33:41.996693 557c Compile date 2022-05-10 13:50:18
+2023/09/25-13:33:41.996704 557c DB SUMMARY
+2023/09/25-13:33:41.996715 557c DB Session ID:  P9PG39OFGTT4C1UVHGPM
+2023/09/25-13:33:41.998505 557c CURRENT file:  CURRENT
+2023/09/25-13:33:41.998524 557c IDENTITY file:  IDENTITY
+2023/09/25-13:33:41.998583 557c MANIFEST file:  MANIFEST-000008 size: 249 Bytes
+2023/09/25-13:33:41.998594 557c SST files in rocksdb-index1\g dir, Total Num: 0, files: 
+2023/09/25-13:33:41.998605 557c Write Ahead Log file in rocksdb-index1\g: 000005.log size: 0 ; 000009.log size: 0 ; 
+2023/09/25-13:33:41.998617 557c                         Options.error_if_exists: 0
+2023/09/25-13:33:42.002797 557c                       Options.create_if_missing: 1
+2023/09/25-13:33:42.002805 557c                         Options.paranoid_checks: 1
+2023/09/25-13:33:42.002810 557c             Options.flush_verify_memtable_count: 1
+2023/09/25-13:33:42.002814 557c                               Options.track_and_verify_wals_in_manifest: 0
+2023/09/25-13:33:42.002819 557c                                     Options.env: 000000003BC24AE0
+2023/09/25-13:33:42.002824 557c                                      Options.fs: WinFS
+2023/09/25-13:33:42.002828 557c                                Options.info_log: 000000003E864600
+2023/09/25-13:33:42.002833 557c                Options.max_file_opening_threads: 16
+2023/09/25-13:33:42.002841 557c                              Options.statistics: 0000000000000000
+2023/09/25-13:33:42.002846 557c                               Options.use_fsync: 0
+2023/09/25-13:33:42.002850 557c                       Options.max_log_file_size: 0
+2023/09/25-13:33:42.002855 557c                  Options.max_manifest_file_size: 104857600
+2023/09/25-13:33:42.002860 557c                   Options.log_file_time_to_roll: 0
+2023/09/25-13:33:42.002866 557c                       Options.keep_log_file_num: 1000
+2023/09/25-13:33:42.002871 557c                    Options.recycle_log_file_num: 0
+2023/09/25-13:33:42.002876 557c                         Options.allow_fallocate: 1
+2023/09/25-13:33:42.002881 557c                        Options.allow_mmap_reads: 0
+2023/09/25-13:33:42.002886 557c                       Options.allow_mmap_writes: 0
+2023/09/25-13:33:42.002890 557c                        Options.use_direct_reads: 0
+2023/09/25-13:33:42.002895 557c                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/09/25-13:33:42.002900 557c          Options.create_missing_column_families: 0
+2023/09/25-13:33:42.002905 557c                              Options.db_log_dir: 
+2023/09/25-13:33:42.002910 557c                                 Options.wal_dir: 
+2023/09/25-13:33:42.002914 557c                Options.table_cache_numshardbits: 6
+2023/09/25-13:33:42.002919 557c                         Options.WAL_ttl_seconds: 0
+2023/09/25-13:33:42.002924 557c                       Options.WAL_size_limit_MB: 0
+2023/09/25-13:33:42.002929 557c                        Options.max_write_batch_group_size_bytes: 1048576
+2023/09/25-13:33:42.002934 557c             Options.manifest_preallocation_size: 4194304
+2023/09/25-13:33:42.002939 557c                     Options.is_fd_close_on_exec: 1
+2023/09/25-13:33:42.002944 557c                   Options.advise_random_on_open: 1
+2023/09/25-13:33:42.002949 557c                   Options.experimental_mempurge_threshold: 0.000000
+2023/09/25-13:33:42.002957 557c                    Options.db_write_buffer_size: 0
+2023/09/25-13:33:42.002963 557c                    Options.write_buffer_manager: 000000003BC24090
+2023/09/25-13:33:42.002971 557c         Options.access_hint_on_compaction_start: 1
+2023/09/25-13:33:42.002978 557c           Options.random_access_max_buffer_size: 1048576
+2023/09/25-13:33:42.002987 557c                      Options.use_adaptive_mutex: 0
+2023/09/25-13:33:42.002994 557c                            Options.rate_limiter: 0000000000000000
+2023/09/25-13:33:42.003002 557c     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/09/25-13:33:42.003025 557c                       Options.wal_recovery_mode: 2
+2023/09/25-13:33:42.003032 557c                  Options.enable_thread_tracking: 0
+2023/09/25-13:33:42.003037 557c                  Options.enable_pipelined_write: 0
+2023/09/25-13:33:42.003041 557c                  Options.unordered_write: 0
+2023/09/25-13:33:42.003046 557c         Options.allow_concurrent_memtable_write: 1
+2023/09/25-13:33:42.003051 557c      Options.enable_write_thread_adaptive_yield: 1
+2023/09/25-13:33:42.003055 557c             Options.write_thread_max_yield_usec: 100
+2023/09/25-13:33:42.003060 557c            Options.write_thread_slow_yield_usec: 3
+2023/09/25-13:33:42.003064 557c                               Options.row_cache: None
+2023/09/25-13:33:42.003069 557c                              Options.wal_filter: None
+2023/09/25-13:33:42.003074 557c             Options.avoid_flush_during_recovery: 0
+2023/09/25-13:33:42.003079 557c             Options.allow_ingest_behind: 0
+2023/09/25-13:33:42.003083 557c             Options.two_write_queues: 0
+2023/09/25-13:33:42.003088 557c             Options.manual_wal_flush: 0
+2023/09/25-13:33:42.003093 557c             Options.wal_compression: 0
+2023/09/25-13:33:42.003098 557c             Options.atomic_flush: 0
+2023/09/25-13:33:42.003102 557c             Options.avoid_unnecessary_blocking_io: 1
+2023/09/25-13:33:42.003107 557c                 Options.persist_stats_to_disk: 0
+2023/09/25-13:33:42.003112 557c                 Options.write_dbid_to_manifest: 1
+2023/09/25-13:33:42.003117 557c                 Options.log_readahead_size: 0
+2023/09/25-13:33:42.003121 557c                 Options.file_checksum_gen_factory: Unknown
+2023/09/25-13:33:42.003126 557c                 Options.best_efforts_recovery: 0
+2023/09/25-13:33:42.003131 557c                Options.max_bgerror_resume_count: 2147483647
+2023/09/25-13:33:42.003136 557c            Options.bgerror_resume_retry_interval: 1000000
+2023/09/25-13:33:42.003144 557c             Options.allow_data_in_errors: 0
+2023/09/25-13:33:42.003149 557c             Options.db_host_id: __hostname__
+2023/09/25-13:33:42.003155 557c             Options.max_background_jobs: 8
+2023/09/25-13:33:42.003160 557c             Options.max_background_compactions: -1
+2023/09/25-13:33:42.003169 557c             Options.max_subcompactions: 4
+2023/09/25-13:33:42.003174 557c             Options.avoid_flush_during_shutdown: 0
+2023/09/25-13:33:42.003180 557c           Options.writable_file_max_buffer_size: 1048576
+2023/09/25-13:33:42.003185 557c             Options.delayed_write_rate : 16777216
+2023/09/25-13:33:42.003190 557c             Options.max_total_wal_size: 0
+2023/09/25-13:33:42.003195 557c             Options.delete_obsolete_files_period_micros: 21600000000
+2023/09/25-13:33:42.003201 557c                   Options.stats_dump_period_sec: 600
+2023/09/25-13:33:42.003206 557c                 Options.stats_persist_period_sec: 600
+2023/09/25-13:33:42.003213 557c                 Options.stats_history_buffer_size: 1048576
+2023/09/25-13:33:42.003218 557c                          Options.max_open_files: -1
+2023/09/25-13:33:42.003223 557c                          Options.bytes_per_sync: 0
+2023/09/25-13:33:42.003228 557c                      Options.wal_bytes_per_sync: 0
+2023/09/25-13:33:42.003232 557c                   Options.strict_bytes_per_sync: 0
+2023/09/25-13:33:42.003239 557c       Options.compaction_readahead_size: 0
+2023/09/25-13:33:42.003247 557c                  Options.max_background_flushes: -1
+2023/09/25-13:33:42.003253 557c Compression algorithms supported:
+2023/09/25-13:33:42.003259 557c 	kZSTD supported: 1
+2023/09/25-13:33:42.003266 557c 	kSnappyCompression supported: 1
+2023/09/25-13:33:42.003273 557c 	kBZip2Compression supported: 0
+2023/09/25-13:33:42.003278 557c 	kZlibCompression supported: 1
+2023/09/25-13:33:42.003283 557c 	kLZ4Compression supported: 1
+2023/09/25-13:33:42.003288 557c 	kXpressCompression supported: 0
+2023/09/25-13:33:42.003293 557c 	kLZ4HCCompression supported: 1
+2023/09/25-13:33:42.003299 557c 	kZSTDNotFinalCompression supported: 1
+2023/09/25-13:33:42.003319 557c Fast CRC32 supported: Not supported on x86
+2023/09/25-13:33:42.003736 557c [WARN] [db\db_impl\db_impl_open.cc:1977] DB::Open() failed: IO error: Failed to create lock file: rocksdb-index1\g/LOCK: 另一个程序正在使用此文件，进程无法访问。
+2023/09/25-13:33:42.003745 557c [db\db_impl\db_impl.cc:475] Shutdown: canceling all background work
+2023/09/25-13:33:42.003764 557c [db\db_impl\db_impl.cc:692] Shutdown complete

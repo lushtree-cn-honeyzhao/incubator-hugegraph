@@ -1,0 +1,105 @@
+2023/09/25-14:55:06.516143 4d74 RocksDB version: 7.2.2
+2023/09/25-14:55:06.516198 4d74 Git sha f2f26b1559b77f56f3074c5cb7d93112b2dd3f9f
+2023/09/25-14:55:06.516216 4d74 Compile date 2022-05-10 13:50:18
+2023/09/25-14:55:06.516227 4d74 DB SUMMARY
+2023/09/25-14:55:06.516238 4d74 DB Session ID:  0UNC7QU0Q05P68IVUTQA
+2023/09/25-14:55:06.517835 4d74 CURRENT file:  CURRENT
+2023/09/25-14:55:06.517858 4d74 IDENTITY file:  IDENTITY
+2023/09/25-14:55:06.517920 4d74 MANIFEST file:  MANIFEST-000034 size: 252 Bytes
+2023/09/25-14:55:06.517932 4d74 SST files in rocksdb-index1\g dir, Total Num: 0, files: 
+2023/09/25-14:55:06.517943 4d74 Write Ahead Log file in rocksdb-index1\g: 000005.log size: 0 ; 000009.log size: 0 ; 000022.log size: 0 ; 000026.log size: 0 ; 000031.log size: 0 ; 000035.log size: 0 ; 
+2023/09/25-14:55:06.522620 4d74                         Options.error_if_exists: 0
+2023/09/25-14:55:06.522627 4d74                       Options.create_if_missing: 1
+2023/09/25-14:55:06.522633 4d74                         Options.paranoid_checks: 1
+2023/09/25-14:55:06.522638 4d74             Options.flush_verify_memtable_count: 1
+2023/09/25-14:55:06.522643 4d74                               Options.track_and_verify_wals_in_manifest: 0
+2023/09/25-14:55:06.522647 4d74                                     Options.env: 0000000001198300
+2023/09/25-14:55:06.522653 4d74                                      Options.fs: WinFS
+2023/09/25-14:55:06.522657 4d74                                Options.info_log: 000000003E1F4340
+2023/09/25-14:55:06.522662 4d74                Options.max_file_opening_threads: 16
+2023/09/25-14:55:06.522667 4d74                              Options.statistics: 0000000000000000
+2023/09/25-14:55:06.522672 4d74                               Options.use_fsync: 0
+2023/09/25-14:55:06.522677 4d74                       Options.max_log_file_size: 0
+2023/09/25-14:55:06.522681 4d74                  Options.max_manifest_file_size: 104857600
+2023/09/25-14:55:06.522686 4d74                   Options.log_file_time_to_roll: 0
+2023/09/25-14:55:06.522691 4d74                       Options.keep_log_file_num: 1000
+2023/09/25-14:55:06.522696 4d74                    Options.recycle_log_file_num: 0
+2023/09/25-14:55:06.522701 4d74                         Options.allow_fallocate: 1
+2023/09/25-14:55:06.522705 4d74                        Options.allow_mmap_reads: 0
+2023/09/25-14:55:06.522710 4d74                       Options.allow_mmap_writes: 0
+2023/09/25-14:55:06.522715 4d74                        Options.use_direct_reads: 0
+2023/09/25-14:55:06.522720 4d74                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/09/25-14:55:06.522725 4d74          Options.create_missing_column_families: 0
+2023/09/25-14:55:06.522729 4d74                              Options.db_log_dir: 
+2023/09/25-14:55:06.522734 4d74                                 Options.wal_dir: 
+2023/09/25-14:55:06.522739 4d74                Options.table_cache_numshardbits: 6
+2023/09/25-14:55:06.522743 4d74                         Options.WAL_ttl_seconds: 0
+2023/09/25-14:55:06.522748 4d74                       Options.WAL_size_limit_MB: 0
+2023/09/25-14:55:06.522753 4d74                        Options.max_write_batch_group_size_bytes: 1048576
+2023/09/25-14:55:06.522758 4d74             Options.manifest_preallocation_size: 4194304
+2023/09/25-14:55:06.522763 4d74                     Options.is_fd_close_on_exec: 1
+2023/09/25-14:55:06.522768 4d74                   Options.advise_random_on_open: 1
+2023/09/25-14:55:06.522772 4d74                   Options.experimental_mempurge_threshold: 0.000000
+2023/09/25-14:55:06.522779 4d74                    Options.db_write_buffer_size: 0
+2023/09/25-14:55:06.522785 4d74                    Options.write_buffer_manager: 0000000001198120
+2023/09/25-14:55:06.522790 4d74         Options.access_hint_on_compaction_start: 1
+2023/09/25-14:55:06.522795 4d74           Options.random_access_max_buffer_size: 1048576
+2023/09/25-14:55:06.522801 4d74                      Options.use_adaptive_mutex: 0
+2023/09/25-14:55:06.522806 4d74                            Options.rate_limiter: 0000000000000000
+2023/09/25-14:55:06.522838 4d74     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/09/25-14:55:06.522845 4d74                       Options.wal_recovery_mode: 2
+2023/09/25-14:55:06.522850 4d74                  Options.enable_thread_tracking: 0
+2023/09/25-14:55:06.522855 4d74                  Options.enable_pipelined_write: 0
+2023/09/25-14:55:06.522860 4d74                  Options.unordered_write: 0
+2023/09/25-14:55:06.522864 4d74         Options.allow_concurrent_memtable_write: 1
+2023/09/25-14:55:06.522869 4d74      Options.enable_write_thread_adaptive_yield: 1
+2023/09/25-14:55:06.522874 4d74             Options.write_thread_max_yield_usec: 100
+2023/09/25-14:55:06.522879 4d74            Options.write_thread_slow_yield_usec: 3
+2023/09/25-14:55:06.522883 4d74                               Options.row_cache: None
+2023/09/25-14:55:06.522888 4d74                              Options.wal_filter: None
+2023/09/25-14:55:06.522893 4d74             Options.avoid_flush_during_recovery: 0
+2023/09/25-14:55:06.522898 4d74             Options.allow_ingest_behind: 0
+2023/09/25-14:55:06.522902 4d74             Options.two_write_queues: 0
+2023/09/25-14:55:06.522907 4d74             Options.manual_wal_flush: 0
+2023/09/25-14:55:06.522912 4d74             Options.wal_compression: 0
+2023/09/25-14:55:06.522917 4d74             Options.atomic_flush: 0
+2023/09/25-14:55:06.522921 4d74             Options.avoid_unnecessary_blocking_io: 1
+2023/09/25-14:55:06.522926 4d74                 Options.persist_stats_to_disk: 0
+2023/09/25-14:55:06.522931 4d74                 Options.write_dbid_to_manifest: 1
+2023/09/25-14:55:06.522936 4d74                 Options.log_readahead_size: 0
+2023/09/25-14:55:06.522941 4d74                 Options.file_checksum_gen_factory: Unknown
+2023/09/25-14:55:06.522946 4d74                 Options.best_efforts_recovery: 0
+2023/09/25-14:55:06.522950 4d74                Options.max_bgerror_resume_count: 2147483647
+2023/09/25-14:55:06.522955 4d74            Options.bgerror_resume_retry_interval: 1000000
+2023/09/25-14:55:06.522960 4d74             Options.allow_data_in_errors: 0
+2023/09/25-14:55:06.522965 4d74             Options.db_host_id: __hostname__
+2023/09/25-14:55:06.522970 4d74             Options.max_background_jobs: 8
+2023/09/25-14:55:06.522974 4d74             Options.max_background_compactions: -1
+2023/09/25-14:55:06.522979 4d74             Options.max_subcompactions: 4
+2023/09/25-14:55:06.522984 4d74             Options.avoid_flush_during_shutdown: 0
+2023/09/25-14:55:06.522989 4d74           Options.writable_file_max_buffer_size: 1048576
+2023/09/25-14:55:06.522993 4d74             Options.delayed_write_rate : 16777216
+2023/09/25-14:55:06.522998 4d74             Options.max_total_wal_size: 0
+2023/09/25-14:55:06.523003 4d74             Options.delete_obsolete_files_period_micros: 21600000000
+2023/09/25-14:55:06.523008 4d74                   Options.stats_dump_period_sec: 600
+2023/09/25-14:55:06.523012 4d74                 Options.stats_persist_period_sec: 600
+2023/09/25-14:55:06.523017 4d74                 Options.stats_history_buffer_size: 1048576
+2023/09/25-14:55:06.523022 4d74                          Options.max_open_files: -1
+2023/09/25-14:55:06.523027 4d74                          Options.bytes_per_sync: 0
+2023/09/25-14:55:06.523032 4d74                      Options.wal_bytes_per_sync: 0
+2023/09/25-14:55:06.523038 4d74                   Options.strict_bytes_per_sync: 0
+2023/09/25-14:55:06.523044 4d74       Options.compaction_readahead_size: 0
+2023/09/25-14:55:06.523050 4d74                  Options.max_background_flushes: -1
+2023/09/25-14:55:06.523054 4d74 Compression algorithms supported:
+2023/09/25-14:55:06.523061 4d74 	kZSTD supported: 1
+2023/09/25-14:55:06.523067 4d74 	kSnappyCompression supported: 1
+2023/09/25-14:55:06.523073 4d74 	kBZip2Compression supported: 0
+2023/09/25-14:55:06.523079 4d74 	kZlibCompression supported: 1
+2023/09/25-14:55:06.523084 4d74 	kLZ4Compression supported: 1
+2023/09/25-14:55:06.523090 4d74 	kXpressCompression supported: 0
+2023/09/25-14:55:06.523095 4d74 	kLZ4HCCompression supported: 1
+2023/09/25-14:55:06.523112 4d74 	kZSTDNotFinalCompression supported: 1
+2023/09/25-14:55:06.523118 4d74 Fast CRC32 supported: Not supported on x86
+2023/09/25-14:55:06.523645 4d74 [WARN] [db\db_impl\db_impl_open.cc:1977] DB::Open() failed: IO error: Failed to create lock file: rocksdb-index1\g/LOCK: 另一个程序正在使用此文件，进程无法访问。
+2023/09/25-14:55:06.523658 4d74 [db\db_impl\db_impl.cc:475] Shutdown: canceling all background work
+2023/09/25-14:55:06.523675 4d74 [db\db_impl\db_impl.cc:692] Shutdown complete

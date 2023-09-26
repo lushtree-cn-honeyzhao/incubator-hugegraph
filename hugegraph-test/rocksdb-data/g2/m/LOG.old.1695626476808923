@@ -1,0 +1,255 @@
+2023/09/25-15:21:16.690716 5a10 RocksDB version: 7.2.2
+2023/09/25-15:21:16.690797 5a10 Git sha f2f26b1559b77f56f3074c5cb7d93112b2dd3f9f
+2023/09/25-15:21:16.690814 5a10 Compile date 2022-05-10 13:50:18
+2023/09/25-15:21:16.690827 5a10 DB SUMMARY
+2023/09/25-15:21:16.690838 5a10 DB Session ID:  XE1X837ARDAI0UV0JE2B
+2023/09/25-15:21:16.691831 5a10 CURRENT file:  CURRENT
+2023/09/25-15:21:16.691845 5a10 IDENTITY file:  IDENTITY
+2023/09/25-15:21:16.691880 5a10 MANIFEST file:  MANIFEST-000061 size: 110 Bytes
+2023/09/25-15:21:16.691895 5a10 SST files in rocksdb-data\g2\m dir, Total Num: 0, files: 
+2023/09/25-15:21:16.691906 5a10 Write Ahead Log file in rocksdb-data\g2\m: 000005.log size: 0 ; 000009.log size: 0 ; 000018.log size: 0 ; 000022.log size: 0 ; 000027.log size: 0 ; 000031.log size: 0 ; 000036.log size: 0 ; 000040.log size: 0 ; 000049.log size: 0 ; 000053.log size: 0 ; 000058.log size: 0 ; 000062.log size: 0 ; 
+2023/09/25-15:21:16.695912 5a10                         Options.error_if_exists: 0
+2023/09/25-15:21:16.695925 5a10                       Options.create_if_missing: 1
+2023/09/25-15:21:16.695930 5a10                         Options.paranoid_checks: 1
+2023/09/25-15:21:16.695934 5a10             Options.flush_verify_memtable_count: 1
+2023/09/25-15:21:16.695939 5a10                               Options.track_and_verify_wals_in_manifest: 0
+2023/09/25-15:21:16.695944 5a10                                     Options.env: 000000003A41A360
+2023/09/25-15:21:16.695949 5a10                                      Options.fs: WinFS
+2023/09/25-15:21:16.695954 5a10                                Options.info_log: 000000003BE02450
+2023/09/25-15:21:16.695958 5a10                Options.max_file_opening_threads: 16
+2023/09/25-15:21:16.695962 5a10                              Options.statistics: 0000000000000000
+2023/09/25-15:21:16.695967 5a10                               Options.use_fsync: 0
+2023/09/25-15:21:16.695971 5a10                       Options.max_log_file_size: 0
+2023/09/25-15:21:16.695976 5a10                  Options.max_manifest_file_size: 104857600
+2023/09/25-15:21:16.695980 5a10                   Options.log_file_time_to_roll: 0
+2023/09/25-15:21:16.695985 5a10                       Options.keep_log_file_num: 1000
+2023/09/25-15:21:16.695989 5a10                    Options.recycle_log_file_num: 0
+2023/09/25-15:21:16.695993 5a10                         Options.allow_fallocate: 1
+2023/09/25-15:21:16.695998 5a10                        Options.allow_mmap_reads: 0
+2023/09/25-15:21:16.696002 5a10                       Options.allow_mmap_writes: 0
+2023/09/25-15:21:16.696006 5a10                        Options.use_direct_reads: 0
+2023/09/25-15:21:16.696011 5a10                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/09/25-15:21:16.696015 5a10          Options.create_missing_column_families: 0
+2023/09/25-15:21:16.696019 5a10                              Options.db_log_dir: 
+2023/09/25-15:21:16.696024 5a10                                 Options.wal_dir: 
+2023/09/25-15:21:16.696028 5a10                Options.table_cache_numshardbits: 6
+2023/09/25-15:21:16.696032 5a10                         Options.WAL_ttl_seconds: 0
+2023/09/25-15:21:16.696037 5a10                       Options.WAL_size_limit_MB: 0
+2023/09/25-15:21:16.696041 5a10                        Options.max_write_batch_group_size_bytes: 1048576
+2023/09/25-15:21:16.696046 5a10             Options.manifest_preallocation_size: 4194304
+2023/09/25-15:21:16.696050 5a10                     Options.is_fd_close_on_exec: 1
+2023/09/25-15:21:16.696055 5a10                   Options.advise_random_on_open: 1
+2023/09/25-15:21:16.696060 5a10                   Options.experimental_mempurge_threshold: 0.000000
+2023/09/25-15:21:16.696071 5a10                    Options.db_write_buffer_size: 0
+2023/09/25-15:21:16.696075 5a10                    Options.write_buffer_manager: 000000003A4190A0
+2023/09/25-15:21:16.696080 5a10         Options.access_hint_on_compaction_start: 1
+2023/09/25-15:21:16.696084 5a10           Options.random_access_max_buffer_size: 1048576
+2023/09/25-15:21:16.696089 5a10                      Options.use_adaptive_mutex: 0
+2023/09/25-15:21:16.696114 5a10                            Options.rate_limiter: 0000000000000000
+2023/09/25-15:21:16.696121 5a10     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/09/25-15:21:16.696125 5a10                       Options.wal_recovery_mode: 2
+2023/09/25-15:21:16.696130 5a10                  Options.enable_thread_tracking: 0
+2023/09/25-15:21:16.696134 5a10                  Options.enable_pipelined_write: 0
+2023/09/25-15:21:16.696139 5a10                  Options.unordered_write: 0
+2023/09/25-15:21:16.696143 5a10         Options.allow_concurrent_memtable_write: 1
+2023/09/25-15:21:16.696148 5a10      Options.enable_write_thread_adaptive_yield: 1
+2023/09/25-15:21:16.696152 5a10             Options.write_thread_max_yield_usec: 100
+2023/09/25-15:21:16.696157 5a10            Options.write_thread_slow_yield_usec: 3
+2023/09/25-15:21:16.696161 5a10                               Options.row_cache: None
+2023/09/25-15:21:16.696165 5a10                              Options.wal_filter: None
+2023/09/25-15:21:16.696170 5a10             Options.avoid_flush_during_recovery: 0
+2023/09/25-15:21:16.696174 5a10             Options.allow_ingest_behind: 0
+2023/09/25-15:21:16.696179 5a10             Options.two_write_queues: 0
+2023/09/25-15:21:16.696183 5a10             Options.manual_wal_flush: 0
+2023/09/25-15:21:16.696187 5a10             Options.wal_compression: 0
+2023/09/25-15:21:16.696192 5a10             Options.atomic_flush: 0
+2023/09/25-15:21:16.696196 5a10             Options.avoid_unnecessary_blocking_io: 1
+2023/09/25-15:21:16.696200 5a10                 Options.persist_stats_to_disk: 0
+2023/09/25-15:21:16.696205 5a10                 Options.write_dbid_to_manifest: 1
+2023/09/25-15:21:16.696209 5a10                 Options.log_readahead_size: 0
+2023/09/25-15:21:16.696214 5a10                 Options.file_checksum_gen_factory: Unknown
+2023/09/25-15:21:16.696218 5a10                 Options.best_efforts_recovery: 0
+2023/09/25-15:21:16.696223 5a10                Options.max_bgerror_resume_count: 2147483647
+2023/09/25-15:21:16.696227 5a10            Options.bgerror_resume_retry_interval: 1000000
+2023/09/25-15:21:16.696232 5a10             Options.allow_data_in_errors: 0
+2023/09/25-15:21:16.696236 5a10             Options.db_host_id: __hostname__
+2023/09/25-15:21:16.696240 5a10             Options.max_background_jobs: 8
+2023/09/25-15:21:16.696245 5a10             Options.max_background_compactions: -1
+2023/09/25-15:21:16.696249 5a10             Options.max_subcompactions: 4
+2023/09/25-15:21:16.696254 5a10             Options.avoid_flush_during_shutdown: 0
+2023/09/25-15:21:16.696258 5a10           Options.writable_file_max_buffer_size: 1048576
+2023/09/25-15:21:16.696262 5a10             Options.delayed_write_rate : 16777216
+2023/09/25-15:21:16.696267 5a10             Options.max_total_wal_size: 0
+2023/09/25-15:21:16.696271 5a10             Options.delete_obsolete_files_period_micros: 21600000000
+2023/09/25-15:21:16.696276 5a10                   Options.stats_dump_period_sec: 600
+2023/09/25-15:21:16.696280 5a10                 Options.stats_persist_period_sec: 600
+2023/09/25-15:21:16.696285 5a10                 Options.stats_history_buffer_size: 1048576
+2023/09/25-15:21:16.696289 5a10                          Options.max_open_files: -1
+2023/09/25-15:21:16.696293 5a10                          Options.bytes_per_sync: 0
+2023/09/25-15:21:16.696298 5a10                      Options.wal_bytes_per_sync: 0
+2023/09/25-15:21:16.696302 5a10                   Options.strict_bytes_per_sync: 0
+2023/09/25-15:21:16.696306 5a10       Options.compaction_readahead_size: 0
+2023/09/25-15:21:16.696311 5a10                  Options.max_background_flushes: -1
+2023/09/25-15:21:16.696315 5a10 Compression algorithms supported:
+2023/09/25-15:21:16.696326 5a10 	kZSTD supported: 1
+2023/09/25-15:21:16.696331 5a10 	kSnappyCompression supported: 1
+2023/09/25-15:21:16.696336 5a10 	kBZip2Compression supported: 0
+2023/09/25-15:21:16.696340 5a10 	kZlibCompression supported: 1
+2023/09/25-15:21:16.696345 5a10 	kLZ4Compression supported: 1
+2023/09/25-15:21:16.696364 5a10 	kXpressCompression supported: 0
+2023/09/25-15:21:16.696369 5a10 	kLZ4HCCompression supported: 1
+2023/09/25-15:21:16.696373 5a10 	kZSTDNotFinalCompression supported: 1
+2023/09/25-15:21:16.696379 5a10 Fast CRC32 supported: Not supported on x86
+2023/09/25-15:21:16.696988 5a10 [db\version_set.cc:4926] Recovering from manifest file: rocksdb-data\g2\m/MANIFEST-000061
+2023/09/25-15:21:16.697195 5a10 [db\column_family.cc:607] --------------- Options for column family [default]:
+2023/09/25-15:21:16.697204 5a10               Options.comparator: leveldb.BytewiseComparator
+2023/09/25-15:21:16.697209 5a10           Options.merge_operator: UInt64AddOperator
+2023/09/25-15:21:16.697214 5a10        Options.compaction_filter: None
+2023/09/25-15:21:16.697218 5a10        Options.compaction_filter_factory: None
+2023/09/25-15:21:16.697223 5a10  Options.sst_partitioner_factory: None
+2023/09/25-15:21:16.697227 5a10         Options.memtable_factory: SkipListFactory
+2023/09/25-15:21:16.697232 5a10            Options.table_factory: BlockBasedTable
+2023/09/25-15:21:16.697263 5a10            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000000003A41CD70)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000000032B82720
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+2023/09/25-15:21:16.697270 5a10        Options.write_buffer_size: 134217728
+2023/09/25-15:21:16.697275 5a10  Options.max_write_buffer_number: 6
+2023/09/25-15:21:16.697280 5a10        Options.compression[0]: NoCompression
+2023/09/25-15:21:16.697284 5a10        Options.compression[1]: NoCompression
+2023/09/25-15:21:16.697289 5a10        Options.compression[2]: Snappy
+2023/09/25-15:21:16.697293 5a10        Options.compression[3]: Snappy
+2023/09/25-15:21:16.697298 5a10        Options.compression[4]: Snappy
+2023/09/25-15:21:16.697302 5a10        Options.compression[5]: Snappy
+2023/09/25-15:21:16.697306 5a10        Options.compression[6]: Snappy
+2023/09/25-15:21:16.697311 5a10                  Options.bottommost_compression: NoCompression
+2023/09/25-15:21:16.697315 5a10       Options.prefix_extractor: nullptr
+2023/09/25-15:21:16.697320 5a10   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2023/09/25-15:21:16.697324 5a10             Options.num_levels: 7
+2023/09/25-15:21:16.697329 5a10        Options.min_write_buffer_number_to_merge: 2
+2023/09/25-15:21:16.697334 5a10     Options.max_write_buffer_number_to_maintain: 0
+2023/09/25-15:21:16.697338 5a10     Options.max_write_buffer_size_to_maintain: 0
+2023/09/25-15:21:16.697342 5a10            Options.bottommost_compression_opts.window_bits: -14
+2023/09/25-15:21:16.697347 5a10                  Options.bottommost_compression_opts.level: 32767
+2023/09/25-15:21:16.697353 5a10               Options.bottommost_compression_opts.strategy: 0
+2023/09/25-15:21:16.697357 5a10         Options.bottommost_compression_opts.max_dict_bytes: 0
+2023/09/25-15:21:16.697362 5a10         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2023/09/25-15:21:16.697367 5a10         Options.bottommost_compression_opts.parallel_threads: 1
+2023/09/25-15:21:16.697373 5a10                  Options.bottommost_compression_opts.enabled: false
+2023/09/25-15:21:16.697379 5a10         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2023/09/25-15:21:16.697386 5a10            Options.compression_opts.window_bits: -14
+2023/09/25-15:21:16.697390 5a10                  Options.compression_opts.level: 32767
+2023/09/25-15:21:16.697395 5a10               Options.compression_opts.strategy: 0
+2023/09/25-15:21:16.697399 5a10         Options.compression_opts.max_dict_bytes: 0
+2023/09/25-15:21:16.697404 5a10         Options.compression_opts.zstd_max_train_bytes: 0
+2023/09/25-15:21:16.697408 5a10         Options.compression_opts.parallel_threads: 1
+2023/09/25-15:21:16.697413 5a10                  Options.compression_opts.enabled: false
+2023/09/25-15:21:16.697417 5a10         Options.compression_opts.max_dict_buffer_bytes: 0
+2023/09/25-15:21:16.697422 5a10      Options.level0_file_num_compaction_trigger: 2
+2023/09/25-15:21:16.697426 5a10          Options.level0_slowdown_writes_trigger: 20
+2023/09/25-15:21:16.697431 5a10              Options.level0_stop_writes_trigger: 36
+2023/09/25-15:21:16.697435 5a10                   Options.target_file_size_base: 67108864
+2023/09/25-15:21:16.697440 5a10             Options.target_file_size_multiplier: 1
+2023/09/25-15:21:16.697444 5a10                Options.max_bytes_for_level_base: 536870912
+2023/09/25-15:21:16.697448 5a10 Options.level_compaction_dynamic_level_bytes: 0
+2023/09/25-15:21:16.697453 5a10          Options.max_bytes_for_level_multiplier: 10.000000
+2023/09/25-15:21:16.697458 5a10 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2023/09/25-15:21:16.697462 5a10 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2023/09/25-15:21:16.697467 5a10 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2023/09/25-15:21:16.697472 5a10 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2023/09/25-15:21:16.697476 5a10 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2023/09/25-15:21:16.697481 5a10 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2023/09/25-15:21:16.697485 5a10 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2023/09/25-15:21:16.697490 5a10       Options.max_sequential_skip_in_iterations: 8
+2023/09/25-15:21:16.697495 5a10                    Options.max_compaction_bytes: 1677721600
+2023/09/25-15:21:16.697499 5a10                        Options.arena_block_size: 1048576
+2023/09/25-15:21:16.697504 5a10   Options.soft_pending_compaction_bytes_limit: 68719476736
+2023/09/25-15:21:16.697508 5a10   Options.hard_pending_compaction_bytes_limit: 274877906944
+2023/09/25-15:21:16.697513 5a10                Options.disable_auto_compactions: 0
+2023/09/25-15:21:16.697518 5a10                        Options.compaction_style: kCompactionStyleLevel
+2023/09/25-15:21:16.697523 5a10                          Options.compaction_pri: kMinOverlappingRatio
+2023/09/25-15:21:16.697527 5a10 Options.compaction_options_universal.size_ratio: 1
+2023/09/25-15:21:16.697531 5a10 Options.compaction_options_universal.min_merge_width: 2
+2023/09/25-15:21:16.697537 5a10 Options.compaction_options_universal.max_merge_width: 4294967295
+2023/09/25-15:21:16.697541 5a10 Options.compaction_options_universal.max_size_amplification_percent: 200
+2023/09/25-15:21:16.697546 5a10 Options.compaction_options_universal.compression_size_percent: 80
+2023/09/25-15:21:16.697551 5a10 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2023/09/25-15:21:16.697555 5a10 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2023/09/25-15:21:16.697560 5a10 Options.compaction_options_fifo.allow_compaction: 0
+2023/09/25-15:21:16.697567 5a10                   Options.table_properties_collectors: 
+2023/09/25-15:21:16.697571 5a10                   Options.inplace_update_support: 0
+2023/09/25-15:21:16.697576 5a10                 Options.inplace_update_num_locks: 10000
+2023/09/25-15:21:16.697580 5a10               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2023/09/25-15:21:16.697585 5a10               Options.memtable_whole_key_filtering: 0
+2023/09/25-15:21:16.697609 5a10   Options.memtable_huge_page_size: 0
+2023/09/25-15:21:16.697614 5a10                           Options.bloom_locality: 0
+2023/09/25-15:21:16.697619 5a10                    Options.max_successive_merges: 0
+2023/09/25-15:21:16.697623 5a10                Options.optimize_filters_for_hits: 1
+2023/09/25-15:21:16.697628 5a10                Options.paranoid_file_checks: 0
+2023/09/25-15:21:16.697632 5a10                Options.force_consistency_checks: 1
+2023/09/25-15:21:16.697637 5a10                Options.report_bg_io_stats: 0
+2023/09/25-15:21:16.697641 5a10                               Options.ttl: 2592000
+2023/09/25-15:21:16.697646 5a10          Options.periodic_compaction_seconds: 0
+2023/09/25-15:21:16.697650 5a10                       Options.enable_blob_files: false
+2023/09/25-15:21:16.697654 5a10                           Options.min_blob_size: 0
+2023/09/25-15:21:16.697659 5a10                          Options.blob_file_size: 268435456
+2023/09/25-15:21:16.697663 5a10                   Options.blob_compression_type: NoCompression
+2023/09/25-15:21:16.697668 5a10          Options.enable_blob_garbage_collection: false
+2023/09/25-15:21:16.697672 5a10      Options.blob_garbage_collection_age_cutoff: 0.250000
+2023/09/25-15:21:16.697677 5a10 Options.blob_garbage_collection_force_threshold: 1.000000
+2023/09/25-15:21:16.697688 5a10          Options.blob_compaction_readahead_size: 0
+2023/09/25-15:21:16.700487 5a10 [db\version_set.cc:4974] Recovered from manifest file:rocksdb-data\g2\m/MANIFEST-000061 succeeded,manifest_file_number is 61, next_file_number is 63, last_sequence is 0, log_number is 59,prev_log_number is 0,max_column_family is 12,min_log_number_to_keep is 0
+2023/09/25-15:21:16.700500 5a10 [db\version_set.cc:4983] Column family [default] (ID 0), log number is 59
+2023/09/25-15:21:16.714650 5a10 [db\version_set.cc:4445] Creating manifest 65
+2023/09/25-15:21:16.742222 5a10 EVENT_LOG_v1 {"time_micros": 1695626476742187, "job": 1, "event": "recovery_started", "wal_files": [5, 9, 18, 22, 27, 31, 36, 40, 49, 53, 58, 62]}
+2023/09/25-15:21:16.742247 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #5 since it is older than min log to keep #59
+2023/09/25-15:21:16.742261 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #9 since it is older than min log to keep #59
+2023/09/25-15:21:16.742270 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #18 since it is older than min log to keep #59
+2023/09/25-15:21:16.742279 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #22 since it is older than min log to keep #59
+2023/09/25-15:21:16.742287 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #27 since it is older than min log to keep #59
+2023/09/25-15:21:16.742296 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #31 since it is older than min log to keep #59
+2023/09/25-15:21:16.742304 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #36 since it is older than min log to keep #59
+2023/09/25-15:21:16.742312 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #40 since it is older than min log to keep #59
+2023/09/25-15:21:16.742321 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #49 since it is older than min log to keep #59
+2023/09/25-15:21:16.742329 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #53 since it is older than min log to keep #59
+2023/09/25-15:21:16.742337 5a10 [db\db_impl\db_impl_open.cc:879] Skipping log #58 since it is older than min log to keep #59
+2023/09/25-15:21:16.742346 5a10 [db\db_impl\db_impl_open.cc:892] Recovering log #62 mode 2
+2023/09/25-15:21:16.742593 5a10 [db\version_set.cc:4445] Creating manifest 66
+2023/09/25-15:21:16.780165 5a10 EVENT_LOG_v1 {"time_micros": 1695626476780151, "job": 1, "event": "recovery_finished"}
+2023/09/25-15:21:16.780961 5a10 [WARN] [db\db_impl\db_impl_open.cc:1977] DB::Open() failed: Invalid argument: Column family not found: g2+il
+2023/09/25-15:21:16.781008 5a10 [db\db_impl\db_impl.cc:475] Shutdown: canceling all background work
+2023/09/25-15:21:16.789829 5a10 [db\db_impl\db_impl.cc:692] Shutdown complete
