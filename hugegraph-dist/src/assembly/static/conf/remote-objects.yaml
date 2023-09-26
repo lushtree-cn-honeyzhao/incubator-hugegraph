@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-hosts: [localhost]
+hosts: 192.168.238.4
 port: 8182
 serializer: {
   className: org.apache.tinkerpop.gremlin.driver.ser.GraphSONMessageSerializerV1d0,
