@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 # host and port of gremlin server, need to be consistent with host and port in rest-server.properties
-host: 192.168.238.4
+host: localhost
 port: 8182
 
 # timeout in ms of gremlin query
